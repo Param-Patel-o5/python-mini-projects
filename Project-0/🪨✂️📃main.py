@@ -1,46 +1,26 @@
-''' Project 0 Rock Paper Scissors'''
-
 import random
 
-
-computer = random.choice([0, -1, 1])
-
-youstr=None
-gesture = ["rock" ,"paper", "scissors" ]
-
-while youstr not in gesture :
-    youstr=input("Enter your gesture:").lower()
-    youdict={"rock":1,"paper":0,"scissors":-1}
-
-you= youdict[youstr]
-
-# Reverse dictionary to get name from value
+gesture = ["rock", "paper", "scissors"]
+youdict = {"rock": 1, "paper": 0, "scissors": -1}
 reversed_dict = {v: k for k, v in youdict.items()}
 
-if(computer == -1 and you ==1):
-    print("you win")
+# Get computer's gesture
+computer = random.choice(list(youdict.values()))
 
- 
-elif(computer == -1 and you ==0):
-    print("you loose")
+# Get user's gesture with validation
+youstr = None
+while youstr not in youdict:
+    youstr = input("Enter your gesture (rock, paper, or scissors): ").lower()
 
+you = youdict[youstr]
 
-if(computer == 0 and you ==1):
-    print("you loose")
+# Game logic
+if computer == you:
+    result = "It's a draw."
+elif (you - computer == 1) or (you - computer == -2):
+    result = "You win!"
+else:
+    result = "You lose."
 
- 
-elif(computer == 0 and you ==-1):
-    print("you win")
-
-
-if(computer == 1 and you ==-1):
-    print("you loose")
-
- 
-elif(computer == 1 and you ==0):
-    print("you win")
-
-if(computer == you):
-    print("It's a draw.")
-
+print(result)
 print(f"Computer gesture was: {reversed_dict[computer]}")
