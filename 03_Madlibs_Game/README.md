@@ -1,4 +1,4 @@
-# 📖 Random Story Generator – Python CLI Fun Project
+# 📖  Madlibs Game (Random Story Generator) – Python CLI Fun Project
 
 A fun little Python program that generates a random silly story based on the user's input. The user provides a noun, verb, adjective, and adverb — and the script picks a random story template and fills in the blanks.
 
