@@ -1,6 +1,6 @@
 # 🧮 SmartInputCalculator
 
-A clean and compact CLI-based calculator built with Python that does more than basic arithmetic — it lets users input complete expressions like `5 + 6 * 2`, `3**3`, or `15 // 2` directly into the terminal and evaluates them intelligently using Python's `eval()` function.
+A clean and compact CLI-based calculator built with Python that does more than basic arithmetic .
 
 ---
 
