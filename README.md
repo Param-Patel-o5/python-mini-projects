@@ -34,5 +34,5 @@ Tutorials are used only for understanding — every project is built manually an
 
 ---
 
-## 📂 Folder Structure Example
+
 
