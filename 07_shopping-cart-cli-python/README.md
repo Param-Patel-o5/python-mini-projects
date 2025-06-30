@@ -22,5 +22,4 @@ A beginner-friendly command-line shopping cart application built using core Pyth
 
 ---
 
-## 🧪 Sample Output
 
